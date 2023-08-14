@@ -1,12 +1,11 @@
 import './App.css';
-import MainPage from './pages/MainPage';
+import Header from './pages/Main/Header';
+import MainPage from './pages/Main/MainPage';
 
 function App() {
   return (
-    <div className="App">
-      <header >
-       header
-      </header>
+    <div className="App min-h-screen bg-slate-900">
+      <Header/>
       <MainPage/>
     </div>
   );
