@@ -42,8 +42,8 @@ function MainPage() {
       title: 'Dow Jones',
       subtitle: 'Dow Jones Industrial Average',
       price: '35,281.40',
-      change: '+ 0.06',
-      color: 'bg-yellow-200'
+      change: '+ 105.30',
+      color: 'bg-red-200'
     },
     {
       icon: <AiFillApple color='white' size={30} />,
@@ -57,8 +57,8 @@ function MainPage() {
       icon: <BsAirplane color='white' size={30} />,
       title: 'BA',
       subtitle: 'The Boeing Company',
-      price: '177.79',
-      change: '+ 0.06',
+      price: '235.72',
+      change: '- 2.54',
       color: 'bg-blue-200'
     }
   ];
@@ -66,6 +66,7 @@ function MainPage() {
   return (
     <>
     {/* 내 자산 */}
+
       <div className="flex flex-col items-center lg:hidden">
         <h2 className={`mt-32 font-normal text-gray-500`}>My balance</h2>
         <h2 className={`text-3xl pt-3 text-white font-bold`}>$1,234.00</h2>

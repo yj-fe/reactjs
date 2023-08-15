@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaSearch, FaBell, FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // React Router의 Link 임포트
 
 
 function Header() {
@@ -12,9 +13,12 @@ function Header() {
       <p className='text-white hidden lg:inline'>주식 미리보기</p>
       {/* 검색, 알림, 계정 아이콘 */}
         <div className="flex space-x-4 mr-10">
-          <FaSearch className="w-6 h-6 text-gray-500" /> {/* 검색 아이콘 */}
-          <FaBell className="w-6 h-6 text-gray-500" /> {/* 알림 아이콘 */}
-          <FaUser className="w-6 h-6 text-gray-500" /> {/* 계정 아이콘 */}
+          {/* 검색 아이콘 */}
+          <Link to="/search"><FaSearch className="w-6 h-6 text-gray-500" /></Link>
+          {/* 알림 아이콘 */}
+          <Link to="/alerts"><FaBell className="w-6 h-6 text-gray-500" /></Link>
+          {/* 계정 아이콘 */}
+          <Link to="/account"><FaUser className="w-6 h-6 text-gray-500" /></Link>
       </div>
     </div>
   )
