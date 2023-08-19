@@ -46,7 +46,7 @@ function SearchPage() {
         )}
       </div>
       <div className="fixed flex w-full mb-0 p-5 bottom-0 z-10">
-        <Footer />
+        <Footer activeIcon="search" />
       </div>
     </div>
   );

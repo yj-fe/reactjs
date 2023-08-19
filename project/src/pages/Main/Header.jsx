@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaSearch, FaBell, FaUser } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // React Router의 Link 임포트
+import { Link } from 'react-router-dom'; 
 
 
 function Header() {
