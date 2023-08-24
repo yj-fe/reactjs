@@ -13,6 +13,7 @@ import {
 import SignupPage from './pages/Account/SignupPage';
 import SearchPage from './pages/Search/SearchPage';
 import AlertsPage from './pages/Alerts/AlertsPage';
+import AccountPage from './pages/Account/AccountPage';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/account",
-    element: <SignupPage />,
+    element: <AccountPage />,
   },
   {
     path: "/search",
