@@ -7,17 +7,27 @@ function SignupPage() {
       <div className="relative lg:w-2/3 max-md:hidden">
         <img
           src="https://ifh.cc/g/dlMZRv.jpg"
-          alt="Stock Image" 
+          alt="Stock" 
           className="flex w-full h-full object-cover"
         />
       </div>
-      <div className="lg:w-1/3 w-full">
+      <div className="lg:w-1/3 w-full p-4 mt-10">
         <div className='text-white flex flex-col text-left p-4 gap-4 w-full'>
           
           <div className="gap-2">
             <p className="text-2xl">Welcome,</p>
             <p className="text-sm">Continue with Google or enter your details.</p>
           </div>
+          <button className="flex w-full text-black bg-white text-center text-xl p-4 justify-center rounded-md relative">
+            <img
+              src="https://ifh.cc/g/10YCD5.png"
+              alt="Google" 
+              className="object-cover w-12"
+              />
+              <p>
+              Log in with Google
+              </p>
+          </button>
 
           <div className="flex w-full gap-2 items-center my-4">
             <div className="border-t w-full h-1 border-gray-500"/>
@@ -34,7 +44,7 @@ function SignupPage() {
               <input type='checkbox' id="remember" className='mr-2'/>
               <label htmlFor="remember" className="mr-4 font-light text-sm italic">Remember for 30 days</label>
             </div>
-            <p className="text-sm font-bold">Forgot password</p>
+            <p className="text-sm font-bold">Forgot password ?</p>
           </div>
           <button className="flex w-full text-black bg-white text-center text-xl p-4 justify-center rounded-md my-8">Log in</button>
           <div className="flex flex-row gap-3 justify-center">
